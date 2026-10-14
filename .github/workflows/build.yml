@@ -1,9 +1,4 @@
-- name: Create local.properties
-  run: |
-    echo "sdk.dir=$ANDROID_HOME" > local.properties
-    echo "apiid=${{ secrets.API_ID }}" >> local.properties
-    echo "apihash=${{ secrets.API_HASH }}" >> local.propertiesname: Build
-
+name: build
 on:
   push:
     branches: [ "dev", "ci" ]
