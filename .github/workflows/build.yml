@@ -82,10 +82,10 @@ jobs:
           ./gradlew bundlePlay
           ./gradlew sentryUploadSourceBundlePlay
 
-      - name: Attest
-        uses: actions/attest@v4
-        with:
-          subject-path: '${{ github.workspace }}/TMessagesProj_App/build/outputs'
+#      - name: Attest
+#        uses: actions/attest@v4
+#        with:
+#          subject-path: '${{ github.workspace }}/TMessagesProj_App/build/outputs'
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v7
