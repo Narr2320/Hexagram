@@ -62,8 +62,8 @@ android {
         }
 
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
+            shrinkResources false
             vcsInfo.include false
             if (localProperties.getProperty("storeFile") != null) {
                 signingConfig signingConfigs.sign
